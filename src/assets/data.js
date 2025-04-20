@@ -1,4 +1,4 @@
-const menu = [
+export const menu = [
   {
     id: 1,
     title: "TIMATIM SELAXA (ቲማቲም ሰላጣ)",
