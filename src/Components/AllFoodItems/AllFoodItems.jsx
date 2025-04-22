@@ -7,16 +7,20 @@ class AllFoodItems extends Component {
       <>
         <div className="foods-container">
           {menu.map(function (element, index) {
+            const {img, desc, id, title, price}=element
             return (
               <FoodItem
-                img={element.img}
-                desc={element.desc}
-                key={element.id}
-                title={element.title}
-                price={element.price}
+                img={img}
+                desc={desc}
+                key={id}
+                title={title}
+                price={price}
+                // {...element} // We can avoid the above 4 lines of codes using these two instead
+                // key={element.id}
               />
             );
           })}
+          <FoodItem />
         </div>
       </>
     );
